@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: #f7f7f7;
+    margin: 20px auto;
+    width: 700px;
+    padding: 15px;
+}
+.quiz-info{
+    display: flex;
+    background: white;
+    padding: 20px;
+}
+.quiz-info .categroy{
+    flex: 1;
+}
+.categroy span{
+    color: #0075ff;
+}
+.quiz-info .count{
+    flex: 1;
+    text-align: right;
+}
+.count span{
+    color: #0075ff;
+}
+.quiz-area{
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+}
+.quiz-area h2{
+    margin: 0;
+}
+.answer-area{
+    padding: 0 20px 20px;
+    background-color: white;
+}
+.answer-area .answer{
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.answer-area .answer:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.answer input[type="radio"]:checked+label{
+    color: #0075ff;
+
+}
+.answer input[type="radio"]{
+    position:relative ;
+    top:1px;
+}
+.answer label{
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(110, 109, 109);
+    margin-left: 5px;
+   
+   
+}
+button{
+    display: block;
+    background-color: #0075ff;
+    padding: 10px 15px;
+    margin: 20px auto;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 18px;
+
+}
+.bulltes{
+    display: flex;
+    border-top: 1px solid #eee;
+    padding: 20px;
+    background: white;
+   
+}
+.bulltes .spans{
+flex: 1;
+display: flex;
+}
+.bulltes .spans span{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-color: rgb(246, 218, 218);
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+    color: white;
+    line-height: 20px;
+    
+
+    }
+    .bulltes .spans span.on{
+        background-color: #0075ff;
+    }
+    .results span{
+        font-weight: bold;
+      
+    }
+    .results span.pad{
+        color:red
+      
+    }
+    .results span.good{
+        color: green;
+      
+    }
+    .results span.prefect{
+        color: #0075ff;
+      
+    }
